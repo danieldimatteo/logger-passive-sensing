@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Changing Battery Settings"
+        style="@android:style/TextAppearance.Large"/>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_battery_insn0"
+        android:text="In order for this app to work properly, we first need you to change a setting outside of this app. Please read the all following steps before clicking the button at the bottom."
+        style="@android:style/TextAppearance.Medium"/>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_battery_insn1"
+        android:text="1. Click button below, which will take you to a settings page."
+        style="@android:style/TextAppearance.Medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_battery_insn2"
+        android:text="2. Click the drop down menu on the new screen (&quot;Not optimized&quot;) and select the second option (&quot;All apps&quot;)."
+        style="@android:style/TextAppearance.Medium"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_battery_insn3"
+        android:text="3. Scroll through the long list of apps and tap on &quot;Logger&quot;."
+        style="@android:style/TextAppearance.Medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_battery_insn4"
+        android:text="4. In the pop up dialog, change the selection to the second option (&quot;Don't optimize&quot;)."
+        style="@android:style/TextAppearance.Medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_battery_insn5"
+        android:text="5. Re-open the &quot;Logger&quot; app and continue."
+        style="@android:style/TextAppearance.Medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/request_ignore_battery_optimization_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Battery Settings"
+            android:background="#767FB0"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

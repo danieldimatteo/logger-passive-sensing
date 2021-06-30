@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ca.utoronto.ece.cimsah.logger">
+
+    <!-- normal permissions: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- dangerous permissions: -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".LoggerApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:allowBackup">
+        <activity
+            android:name=".main.HomeScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intro.IntroActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".scales.lsas.LsasActivity"
+            android:label="@string/title_activity_lsas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".scales.simple.SimpleScaleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".authentication.EmailPasswordActivity" />
+        <activity
+            android:name=".scales.ScalePanelActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".notifications.SnoozeActivity" />
+        <activity
+            android:name=".scales.sds.SdsActivity"
+            android:label="@string/title_activity_sds"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <service android:name=".contacts.ContactLoggingService" />
+        <service android:name=".screen.ScreenListenerService" />
+        <service android:name=".LightSensorListenerService" />
+        <service android:name=".audio.AudioRecorderService" />
+        <service android:name=".sync.SyncService" />
+        <service android:name=".calendar.CalendarCaptureService" />
+        <service android:name=".scheduling.RestarterService" />
+        <service android:name=".scheduling.TerminatorService" />
+        <service android:name=".snapshot.SnapshotLoggingService"/>
+
+        <receiver android:name=".scheduling.PollReceiver" />
+        <receiver android:name=".notifications.NotificationReceiver" />
+        <receiver android:name=".scheduling.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="<INSERT_AWARENESS_API_KEY_HERE>"/>
+
+    </application>
+
+</manifest>

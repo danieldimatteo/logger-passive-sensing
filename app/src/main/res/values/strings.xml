@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">Logger</string>
+
+    <string name="signUpReplace">Create a New Account</string>
+
+    <string name="start">start</string>
+    <string name="help">Help</string>
+    <string name="lsas_page_number">%1$d of 24</string>
+    <string name="scale_page_number">%1$d of %2$d</string>
+
+    <string name="in_vehicle">in_vehicle</string>
+    <string name="on_bicycle">on_bicycle</string>
+    <string name="on_foot">on_foot</string>
+    <string name="running">running</string>
+    <string name="still">still</string>
+    <string name="tilting">tilting</string>
+    <string name="unknown">unknown</string>
+    <string name="walking">walking</string>
+    <string name="unidentifiable_activity">unidentifiable_activity: %d</string>
+
+    <string name="trial_day_count">Day %1$d of %2$d</string>
+
+    <string name="in_progress_message_clinic">On %1$s you will get a notification asking you to answer the same set of questionnaires that you did at the beginning of the study. Once those are answered, you have finished the study!</string>
+    <string name="in_progress_message_prolific">On %1$s you will get a notification asking you to answer the same set of questionnaires that you did at the beginning of the study. Once those are answered, the study is over and we will give you a completion code! Please submit NOCODE for now.</string>
+
+    <string name="withdraw_instructions_clinic">Uninstall this app at any time to withdraw from the study. Please also call the START clinic to let us know that you have chosen to withdraw.</string>
+    <string name="withdraw_instructions_prolific">Return your submission on the Prolific website and then uninstall this app (Logger) to withdraw from the study.</string>
+
+    <string name="study_complete_message_clinic">All tasks complete, thank you! You can uninstall the app now.</string>
+    <string name="study_complete_message_prolific">All tasks complete, thank you! You can uninstall the app after submitting your completion code or clicking the completion URL below.</string>
+
+    <string name="emailpassword_status_fmt">Email User: %s</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- SDS String Resources-->
+    <string name="title_activity_sds">Sheehan Disability Scale</string>
+    <string name="sds_heading">This questionnaire will ask you 5 questions about how your mental health may be affecting your daily activities. Touch and drag on the following scales to rate each question.\n\n\u00A0\u00A00\u00A0: Not at all\n1-3: Mildly\n4-6: Moderately\n7-9: Markedly\n 10: Extremely</string>
+    <string name="sds_work_heading">Work*/School</string>
+    <string name="sds_work_desc">Your mental health has disrupted your work/school work:</string>
+    <string name="sds_checkbox">I have not worked/studied at all during the past week for reasons unrelated to the disorder.</string>
+    <string name="sds_work_footnote">* Work includes paid, unpaid volunteer work or training</string>
+    <string name="sds_social_heading">Social Life</string>
+    <string name="sds_social_desc">Your mental health has disrupted your social life/leisure activities:</string>
+    <string name="sds_family_heading">Family Life/Home Responsibilities</string>
+    <string name="sds_family_desc">Your mental health has disrupted your family life/home responsibilities:</string>
+    <string name="sds_days_lost_heading">Days Lost</string>
+    <string name="sds_days_lost_question">On how many days in the last week did your mental health cause you to miss school or work or leave you unable to carry out your normal daily responsibilities?</string>
+    <string name="sds_days_unproductive_heading">Days Unproductive</string>
+    <string name="sds_days_unproductive_question">On how many days in the last week did you feel so impaired by your mental health, that even though you went to school or work, your productivity was reduced?</string>
+
+    <!-- LSAS String Resources-->
+    <string name="title_activity_lsas">Liebowitz Social Anxiety Scale</string>
+    <string name="lsas_intro"> This questionnaire assesses the way that social anxiety may play a role in your
+        life across a variety of situations. Please read each situation carefully and answer two questions
+        about that situation.\n\nThe first question asks how anxious or fearful you feel in
+        the situation.The second question asks how often you avoid the situation.\n\nIf you come across
+        a situation that you ordinarily do not experience, imagine \"what if you were faced with that
+        situation,\" and then, rate the degree to which you would fear this situation
+        and how often you would tend to avoid it.\n\nPlease base your ratings on the way that the
+        situations have affected you in the last two weeks.
+    </string>
+    <string-array name="lsas_questions_array">
+        <item>Telephoning in public</item>
+        <item>Participating in small groups</item>
+        <item>Eating in public places</item>
+        <item>Drinking with others in public places</item>
+        <item>Talking to people in authority</item>
+        <item>Acting, performing or giving a talk in front of an audience</item>
+        <item>Going to a party</item>
+        <item>Working while being observed</item>
+        <item>Writing while being observed</item>
+        <item>Calling someone you don\'t know very well</item>
+        <item>Talking with people you don\'t know very well</item>
+        <item>Meeting strangers</item>
+        <item>Urinating in a public bathroom</item>
+        <item>Entering a room when others are already seated</item>
+        <item>Being the center of attention</item>
+        <item>Speaking up at a meeting</item>
+        <item>Taking a written test</item>
+        <item>Expressing appropriate disagreement or disapproval to people you don\'t know very well</item>
+        <item>Looking at people you don\'t know very well in the eyes</item>
+        <item>Giving a report to a group</item>
+        <item>Trying to pick up someone</item>
+        <item>Returning goods to a store where returns are normally accepted</item>
+        <item>Giving an average party</item>
+        <item>Resisting a high pressure salesperson</item>
+    </string-array>
+    <string-array name="lsas_examples_array">
+        <item>&#8226; speaking on the telephone in a public place</item>
+        <item>&#8226; having a discussion with a few others</item>
+        <item>&#8226; do you tremble or feel awkward handling food</item>
+        <item>&#8226; refers to any beverage including alcohol</item>
+        <item>&#8226; for example, a boss or teacher</item>
+        <item>&#8226; refers to a large audience</item>
+        <item>&#8226; an average party to which you may be invited; assume you know some but not all of the people at the party</item>
+        <item>&#8226; any type of work you might do including school work or housework</item>
+        <item>&#8226; for example, signing a check in a bank</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>&#8226; assume that others are sometimes present as might normally be expected</item>
+        <item>&#8226; refers to a small group, and nobody has to move seats for you</item>
+        <item>&#8226; telling a story to a group of people</item>
+        <item>&#8226; speaking from your seat in a small meeting or standing up in place in a large meeting</item>
+        <item></item>
+        <item></item>
+        <item>&#8226; refers to appropriate eye contact</item>
+        <item>&#8226; refers to an oral presentation to a small group</item>
+        <item>&#8226; refers to a  single person attempting to initiate a relationship with a stranger</item>
+        <item></item>
+        <item></item>
+        <item>&#8226; avoidance refers to listening to a salesperson too long</item>
+    </string-array>
+    <string name="fear_heading">Fear or Anxiety in this situation</string>
+    <string name="fear_0">None</string>
+    <string name="fear_1">Mild</string>
+    <string name="fear_2">Moderate</string>
+    <string name="fear_3">Severe</string>
+    <string name="avoidance_heading">Avoidance (how often would you avoid this situation)</string>
+    <string name="avoidance_0">Never (0%)</string>
+    <string name="avoidance_1">Occasionally (1 – 33%)</string>
+    <string name="avoidance_2">Often (33 – 67%)</string>
+    <string name="avoidance_3">Usually (67 – 100%)</string>
+
+    <!-- GAD-7 String Resources-->
+    <string name="gad7_title">GAD-7</string>
+    <string name="gad7_instructions">This questionnaire will ask you 7 more questions related to feelings of worry or anxiety over the
+past 2 weeks.</string>
+    <string-array name="gad7_questions_array">
+        <item>Over the past 2 weeks, how often have you felt nervous, anxious, or on edge?</item>
+        <item>Over the past 2 weeks, how often have you been unable to stop or control worrying?</item>
+        <item>Over the past 2 weeks, how often have you been worrying too much about different things?</item>
+        <item>Over the past 2 weeks, how often have you had trouble relaxing?</item>
+        <item>Over the past 2 weeks, how often have you been so restless that it\'s hard to sit still?</item>
+        <item>Over the past 2 weeks, how often have you become easily annoyed or irritable?</item>
+        <item>Over the past 2 weeks, how often have you felt afraid as if something awful might happen?</item>
+    </string-array>
+
+    <!-- PHQ-9 String Resources-->
+    <string name="phq9_title">PHQ-9</string>
+    <string name="phq9_instructions">This questionnaire will ask you 9 more questions
+        related to your mood over the past 2 weeks.
+    </string>
+    <string-array name="phq9_questions_array">
+        <item>Over the past 2 weeks, how often have you had little interest or pleasure in doing things?</item>
+        <item>Over the past 2 weeks, how often have you felt down, depressed or hopeless?</item>
+        <item>Over the past 2 weeks, how often have you had trouble falling asleep, staying asleep, or sleeping too
+        much?</item>
+        <item>Over the past 2 weeks, how often have you had felt tired or having little energy?</item>
+        <item>Over the past 2 weeks, how often have you either had poor appetite or were overeating?</item>
+        <item>Over the past 2 weeks, how often have you felt bad about yourself - or that you\'re a failure or have let
+yourself or your family down?</item>
+        <item>Over the past 2 weeks, how often have you had trouble concentrating on things, such as reading the
+newspaper or watching television?</item>
+        <item> Over the past 2 weeks, how often were you moving or speaking so slowly that other people could have
+noticed. Or, the opposite - being so fidgety or restless that you have been moving around a lot more than
+usual?</item>
+        <item>Over the past 2 weeks, how often have you had thoughts that you would be better off dead or of
+hurting yourself in some way?</item>
+    </string-array>
+
+    <!-- PHQ-8 String Resources-->
+    <string name="phq8_title">PHQ-8</string>
+    <string name="phq8_instructions">This questionnaire will ask you 8 more questions
+        related to your mood over the past 2 weeks.
+    </string>
+    <string-array name="phq8_questions_array">
+        <item>Over the past 2 weeks, how often have you had little interest or pleasure in doing things?</item>
+        <item>Over the past 2 weeks, how often have you felt down, depressed or hopeless?</item>
+        <item>Over the past 2 weeks, how often have you had trouble falling asleep, staying asleep, or sleeping too
+        much?</item>
+        <item>Over the past 2 weeks, how often have you had felt tired or having little energy?</item>
+        <item>Over the past 2 weeks, how often have you either had poor appetite or were overeating?</item>
+        <item>Over the past 2 weeks, how often have you felt bad about yourself - or that you\'re a failure or have let
+yourself or your family down?</item>
+        <item>Over the past 2 weeks, how often have you had trouble concentrating on things, such as reading the
+newspaper or watching television?</item>
+        <item> Over the past 2 weeks, how often were you moving or speaking so slowly that other people could have
+noticed. Or, the opposite - being so fidgety or restless that you have been moving around a lot more than
+usual?</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/page_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/page_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_above="@id/page_number">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:tools="http://schemas.android.com/tools"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:paddingBottom="@dimen/activity_vertical_margin"
+                     android:paddingLeft="@dimen/activity_horizontal_margin"
+                     android:paddingRight="@dimen/activity_horizontal_margin"
+                     android:paddingTop="@dimen/activity_vertical_margin"
+                     tools:context=".scales.lsas.LsasQuestionFragment">
+
+            <TextView
+                android:id="@+id/question_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/question_example"
+                android:layout_below="@id/question_title"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_example">
+                <RadioGroup
+                    android:id="@+id/radiogroup_fear_selection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fear_heading"/>
+                    <RadioButton
+                        android:id="@+id/radio_fear_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fear_0" />
+                    <RadioButton
+                        android:id="@+id/radio_fear_mild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fear_1" />
+                    <RadioButton
+                        android:id="@+id/radio_fear_moderate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fear_2" />
+                    <RadioButton
+                        android:id="@+id/radio_fear_severe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fear_3" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_avoidance_selection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoidance_heading"/>
+                    <RadioButton
+                        android:id="@+id/radio_avoidance_never"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoidance_0" />
+                    <RadioButton
+                        android:id="@+id/radio_avoidance_occasionally"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoidance_1" />
+                    <RadioButton
+                        android:id="@+id/radio_avoidance_often"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoidance_2" />
+                    <RadioButton
+                        android:id="@+id/radio_avoidance_usually"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoidance_3" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
